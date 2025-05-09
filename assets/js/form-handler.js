@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // --- Configuration ---
   // !!! IMPORTANT: Replace this with your actual backend API endpoint !!!
-  const API_ENDPOINT = "http://localhost:3000/send-email";
+  const API_ENDPOINT = "https://izoduwa-presh-server.onrender.com/send-email";
   // --- End Configuration ---
 
   const contactForms = document.querySelectorAll("form#contact-form");
