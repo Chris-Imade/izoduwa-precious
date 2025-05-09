@@ -156,16 +156,7 @@
             </ul>
           </div>
 
-          <div class="search-form">
-            <div class="form-group">
-              <input type="text" name="search" placeholder="Search" />
-              <button><span class="pe-7s-search"></span></button>
-            </div>
-            <div class="search-icon">
-              <span class="pe-7s-search open-search"></span>
-              <span class="pe-7s-close close-search"></span>
-            </div>
-          </div>
+          <div class="search-form"></div>
         </div>
       </nav>
 
@@ -263,7 +254,7 @@
                       <form
                         id="contact-form"
                         method="post"
-                        action="contact.php"
+                        action="/send-email"
                       >
                         <div class="messages"></div>
                         <div class="controls row">
@@ -383,5 +374,6 @@
 
     <!-- custom scripts -->
     <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/form-handler.js" defer></script>
   </body>
 </html>
