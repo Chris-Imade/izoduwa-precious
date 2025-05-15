@@ -78,6 +78,44 @@
                 margin-top: 5rem;
             }
         }
+
+        /* Toast Notification Styles */
+        .toast-notification {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: #fff;
+            padding: 15px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            z-index: 1000;
+            visibility: hidden; /* Hidden by default */
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+        }
+
+        .toast-notification.show {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .toast-message {
+            margin-right: 15px;
+        }
+
+        .toast-close-button {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 0 5px;
+            line-height: 1;
+        }
     </style>
 
 </head>
@@ -718,100 +756,100 @@
                         <div class="slide-har st1">
                             <div class="box">
                                 <div class="item">
-                                    <a href="#" class="img">
-                                        <img src="assets/imgs/brands/b1.png" alt="Edo State Government Nigeria" title="Edo State Government Nigeria">
+                                    <a class="img" data-toast-text="Edo State Government Nigeria">
+                                        <img src="assets/imgs/brands/b1.png" alt="Edo State Government Nigeria">
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#" class="img">
-                                        <img src="assets/imgs/brands/b2.png" alt="EdoBest" title="EdoBest">
+                                    <a class="img" data-toast-text="EdoBest">
+                                        <img src="assets/imgs/brands/b2.png" alt="EdoBest">
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#" class="img">
-                                        <img src="assets/imgs/brands/b3.png" alt="Pluralsight" title="Pluralsight">
+                                    <a class="img" data-toast-text="Pluralsight">
+                                        <img src="assets/imgs/brands/b3.png" alt="Pluralsight">
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#" class="img">
-                                        <img src="assets/imgs/brands/b4.png" alt="World Bank Project" title="World Bank Project">
+                                    <a class="img" data-toast-text="World Bank Project">
+                                        <img src="assets/imgs/brands/b4.png" alt="World Bank Project">
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#" class="img">
-                                        <img src="assets/imgs/brands/b5.png" alt="Udacity" title="Udacity">
+                                    <a class="img" data-toast-text="Udacity">
+                                        <img src="assets/imgs/brands/b5.png" alt="Udacity">
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#" class="img">
-                                        <img src="assets/imgs/brands/b6.jpg" alt="GIZ" title="Deutsche Gesellschaft für Internationale Zusammenarbeit">
+                                    <a class="img" data-toast-text="Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ)">
+                                        <img src="assets/imgs/brands/b6.jpg" alt="GIZ">
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#" class="img">
-                                        <img src="assets/imgs/brands/b1.png" alt="Edo State Government Nigeria" title="Edo State Government Nigeria">
+                                    <a class="img" data-toast-text="Edo State Government Nigeria">
+                                        <img src="assets/imgs/brands/b1.png" alt="Edo State Government Nigeria">
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#" class="img">
-                                        <img src="assets/imgs/brands/b2.png" alt="EdoBest" title="EdoBest">
+                                    <a class="img" data-toast-text="EdoBest">
+                                        <img src="assets/imgs/brands/b2.png" alt="EdoBest">
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#" class="img">
-                                        <img src="assets/imgs/brands/b3.png" alt="Pluralsight" title="Pluralsight">
+                                    <a class="img" data-toast-text="Pluralsight">
+                                        <img src="assets/imgs/brands/b3.png" alt="Pluralsight">
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#" class="img">
-                                        <img src="assets/imgs/brands/b4.png" alt="World Bank Project" title="World Bank Project">
+                                    <a class="img" data-toast-text="World Bank Project">
+                                        <img src="assets/imgs/brands/b4.png" alt="World Bank Project">
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#" class="img">
-                                        <img src="assets/imgs/brands/b5.png" alt="Udacity" title="Udacity">
+                                    <a class="img" data-toast-text="Udacity">
+                                        <img src="assets/imgs/brands/b5.png" alt="Udacity">
                                     </a>
                                 </div>
                             </div>
                             <div class="box">
                                 <div class="item">
-                                    <a href="#" class="img">
-                                        <img src="assets/imgs/brands/b1.png" alt="Edo State Government Nigeria" title="Edo State Government Nigeria">
+                                    <a class="img" data-toast-text="Edo State Government Nigeria">
+                                        <img src="assets/imgs/brands/b1.png" alt="Edo State Government Nigeria">
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#" class="img">
-                                        <img src="assets/imgs/brands/b2.png" alt="EdoBest" title="EdoBest">
+                                    <a class="img" data-toast-text="EdoBest">
+                                        <img src="assets/imgs/brands/b2.png" alt="EdoBest">
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#" class="img">
-                                        <img src="assets/imgs/brands/b3.png" alt="Pluralsight" title="Pluralsight">
+                                    <a class="img" data-toast-text="Pluralsight">
+                                        <img src="assets/imgs/brands/b3.png" alt="Pluralsight">
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#" class="img">
-                                        <img src="assets/imgs/brands/b4.png" alt="World Bank Project" title="World Bank Project">
+                                    <a class="img" data-toast-text="World Bank Project">
+                                        <img src="assets/imgs/brands/b4.png" alt="World Bank Project">
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#" class="img">
-                                        <img src="assets/imgs/brands/b5.png" alt="Udacity" title="Udacity">
+                                    <a class="img" data-toast-text="Udacity">
+                                        <img src="assets/imgs/brands/b5.png" alt="Udacity">
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#" class="img">
-                                        <img src="assets/imgs/brands/b6.png" alt="">
+                                     <a class="img" data-toast-text="Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ)">
+                                        <img src="assets/imgs/brands/b6.png" alt="GIZ">
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#" class="img">
-                                        <img src="assets/imgs/brands/b4.png" alt="">
+                                    <a class="img" data-toast-text="World Bank Project">
+                                        <img src="assets/imgs/brands/b4.png" alt="World Bank Project">
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#" class="img">
-                                        <img src="assets/imgs/brands/b5.png" alt="">
+                                    <a class="img" data-toast-text="Udacity">
+                                        <img src="assets/imgs/brands/b5.png" alt="Udacity">
                                     </a>
                                 </div>
                             </div>
@@ -966,6 +1004,13 @@
     <!-- custom scripts -->
     <script src="assets/js/scripts.js"></script>
     <script src="assets/js/form-handler.js" defer></script>
+    <script src="assets/js/toast-handler.js" defer></script>
+
+    <!-- Toast Notification HTML -->
+    <div id="toast-notification" class="toast-notification">
+        <span id="toast-message"></span>
+        <button id="toast-close-button" class="toast-close-button">&times;</button>
+    </div>
 
 </body>
 
